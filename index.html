@@ -106,9 +106,11 @@
             <input type="text" id="full-name" name="full-name" required>
         </div>
         <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid Gmail address">
+          <div id="email-error" class="error"></div>
         </div>
+        
         <div class="input-group">
             <label for="phone-number">Phone Number</label>
             <input type="tel" id="phone-number" name="phone-number" required>
