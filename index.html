@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script src="./Assets/App.js"></script>
+  <title>COFFEE | SHOP</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="#">Coffee Corner</a>
+    </div>
+    <div class="toggle-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clients">Our Clients</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="home-section" id="home">
+    <div class="image-overlay">
+      <img src="./Assets/images/home-img.jpg" alt="Home Image">
+      <div class="overlay-text">
+        <h1>Welcome To Our Cafe </h1>
+        <p>At our coffee shop, we pour love, passion, and quality into every cup <br>  The coffee shop is a haven where the love for coffee intertwines with community and enjoyment.</p>
+        <button class="my-button">BOOK A TABLE</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Coffee Section -->
+  <section class="coffee-section" id="services">
+    <div class="container d-flex">
+      <div class="content me-3">
+          <div>
+              <div class="icon"><i class="fas fa-mug-hot"></i></div>
+              <h2>ORIGINAL COFFEE</h2>
+              
+<p class="text-justify">Indulge in our exquisite selection of signature coffee blends, crafted with the finest beans and roasted to perfection. Each cup delivers a rich, aromatic experience that captures the essence of true coffee craftsmanship. Discover your new favorite blend today!</p><br>
+
+          </div>
+          <div>
+              <div class="icon"><i class="fas fa-coffee"></i></div>
+              <h2>SELF ROASTED</h2>
+             
+<p class="text-justify">Experience the unmatched freshness of our coffee, roasted daily in-house to ensure maximum flavor and aroma. Our expertly roasted beans bring out the rich, full-bodied notes that make every cup a delightful journey. Enjoy the true taste of premium coffee with each sip.</p><br>
+
+          </div>
+          <div>
+              <div class="icon"><i class="fas fa-list"></i></div>
+              <h2>15 COFFEE ITEMS</h2>
+          
+<p class="text-justify">Explore our diverse coffee menu featuring 15 unique and expertly crafted coffee creations. From classic espresso to innovative blends, each item is designed to offer a distinct taste experience. Whether you prefer a bold brew or a smooth latte, we have something to satisfy every coffee lover's craving.</p>
+
+          </div>
+      </div>
+      <div class="image-container row ms-3">
+        <img src="./Assets/images/coffee-machine.jpg" alt="Coffee Image">
+        <div class="image-border"></div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="about-us-section" id="about-us">
+    <div class="container d-flex">
+      <div class="row">
+        <div class="abt-container row ms-3">
+          <img src="./Assets/images/about-us.jpg" class="about-img" alt="Cafe Interior">
+         
+        </div>
+          <div class="col-md-6 abt-content">
+            
+            <h2>About Us</h2>
+            <p>At Coffee Corner, we blend passion and expertise to bring you the finest coffee experience. Our journey begins with sourcing the highest quality beans from around the world, which we roast in-house to achieve the perfect flavor profile. Our skilled baristas craft each cup with care, ensuring a delightful and aromatic experience every time. From rich espressos to creamy lattes, our coffee is designed to elevate your coffee moments and bring a touch of warmth to your day. Join us and savor the true essence of exceptional coffee.</p>
+
+            <button class="my-button">Read More</button>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <div class="form-container" id="contact-us">
+    <form action="connect.php" method="post">
+      <h2>Book a Table</h2>
+      <div class="input-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" required>
+      </div>
+      <div class="input-group">
+          <label for="number-of-people" >Number of People</label>
+          <input type="number" id="number-of-people" name="number-of-people" required>
+      </div>
+      <div class="input-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+      </div>
+      <div class="input-group">
+          <label for="additional-note">Additional Note</label>
+          <textarea id="additional-note" name="additional-note"></textarea>
+      </div>
+      <button class="form-button" style="background-color: #184d47;" type="submit">Send</button>
+  </form>
+  
+</div>
+<section class="testimonial" id="clients">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <h3 class="mb-4 Testimonial-sec">What Our Customers Say</h3>
+      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+      "Coffee Corner is a haven for coffee enthusiasts. The quality of their brews is unmatched, and the atmosphere is always inviting. Each visit feels like a special occasion, thanks to their exceptional service and delicious coffee. Highly recommended for anyone looking to enjoy a perfect cup of coffee in a cozy setting!"
+
+      </p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Maria Smantha</h5>
+     
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>The atmosphere at Coffee Corner is second to none. Their coffee is always fresh and full of flavor, and the staff is incredibly friendly. It's my go-to spot for a productive work session or a relaxing coffee break.
+      </p>
+      
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Lisa Cudrow</h5>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Coffee Corner is a creative oasis for me. Their unique blends and cozy ambiance provide the perfect backdrop for brainstorming and designing. It's my favorite spot to recharge and get inspired.
+      </p>
+      
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">John Smith</h5>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Coffee Corner has become my favorite retreat. Their exceptional coffee and welcoming atmosphere make it the perfect place to unwind after a busy day. It’s more than just a coffee shop; it’s a relaxing escape from the hustle.
+      </p>
+      
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="far fa-star fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="text-light pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 text-justify font-weight-bold"> <strong>Coffee Corner</strong></h5>
+        <p class="text-justify">At our coffee shop, we pour love, passion, and quality into every cup. The coffee shop is a haven where the love for coffee intertwines with community and enjoyment.</p>
+      </div>
+      
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 text-justify font-weight-bold"> <strong>Quick Links</strong></h5>
+        <p class="text-justify"><a href="#home" class="text-light" style="text-decoration: none;">Home</a></p>
+        <p class="text-justify"><a href="#about-us" class="text-light" style="text-decoration: none;">About Us</a></p>
+        <p class="text-justify"><a href="#services" class="text-light" style="text-decoration: none;">Services</a></p>
+        <p class="text-justify"><a href="#clients" class="text-light" style="text-decoration: none;">Our Clients</a></p>
+        <p class="text-justify"><a href="#contact-us" class="text-light" style="text-decoration: none;">Contact Us</a></p>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 text-justify font-weight-bold"> <strong>Contact Us</strong></h5>
+        <p class="text-justify"><i class="fas fa-home mr-3"></i> 123 Main Street, Anytown, USA</p>
+        <p class="text-justify"><i class="fas fa-envelope mr-3"></i> info@CoffeeCorner.com</p>
+        <p class="text-justify"><i class="fas fa-phone mr-3"></i> +1 234 567 890</p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+   
+  </div>
+   <div class="col-md-12 text-center mb-3">
+        <p>
+          © 2024 All rights reserved by: 
+          <a href="#" style="text-decoration: none;">
+            <strong>Coffee Corner</strong>
+          </a>
+        </p>
+      </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
