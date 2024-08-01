@@ -268,6 +268,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
+  color: white;
 }
 
 input, textarea {
@@ -281,6 +282,23 @@ input, textarea {
 
 input[type="date"] {
   padding-right: 30px; /* to accommodate the calendar icon */
+}
+
+/* Styles for the message container */
+#message {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text color */
+  border: 1px solid #c3e6cb; /* Green border */
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Optional: Styles for the form container */
+.form-container {
+  margin-top: 20px;
 }
 
 .form-button {

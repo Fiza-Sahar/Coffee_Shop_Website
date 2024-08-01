@@ -99,36 +99,37 @@
   </section>
   
   <div class="form-container" id="contact-us">
-    <form action="connect.php" method="post">
-      <h2>Book a Table</h2>
-      <div class="input-group">
-          <label for="full-name">Full Name</label>
-          <input type="text" id="full-name" name="full-name" required>
-      </div>
-      <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-      </div>
-      <div class="input-group">
-          <label for="phone-number">Phone Number</label>
-          <input type="tel" id="phone-number" name="phone-number" required>
-      </div>
-      <div class="input-group">
-          <label for="number-of-people" >Number of People</label>
-          <input type="number" id="number-of-people" name="number-of-people" required>
-      </div>
-      <div class="input-group">
-          <label for="date">Date</label>
-          <input type="date" id="date" name="date" required>
-      </div>
-      <div class="input-group">
-          <label for="additional-note">Additional Note</label>
-          <textarea id="additional-note" name="additional-note"></textarea>
-      </div>
-      <button class="form-button" style="background-color: #184d47;" type="submit">Send</button>
-  </form>
-  
+    <form id="contact-form" action="connect.php" method="post">
+        <h2>Book a Table</h2>
+        <div class="input-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+        </div>
+        <div class="input-group">
+            <label for="number-of-people">Number of People</label>
+            <input type="number" id="number-of-people" name="number-of-people" required>
+        </div>
+        <div class="input-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="input-group">
+            <label for="additional-note">Additional Note</label>
+            <textarea id="additional-note" name="additional-note"></textarea>
+        </div>
+        <button class="form-button" style="background-color: #184d47;" type="submit">Send</button>
+    </form>
+    <div id="message" style="display:none;"></div>
 </div>
+
 <section class="testimonial" id="clients">
   <div class="row d-flex justify-content-center">
     <div class="col-md-10 col-xl-8 text-center">
